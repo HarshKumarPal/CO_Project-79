@@ -1,4 +1,4 @@
-For assembler:
+1. Example For assembler:
 
 var VAR1
 add R1 R2 R3
@@ -6,3 +6,21 @@ movi R4 $20
 ld R1 VAR1
 jmp :LOOP
 hlt
+
+
+2. Example assembly code:
+
+var counter
+var result
+
+movi R0 5
+movi R1 10
+
+loop:
+    add R0 R1 R0
+    sub R1 R0 R1
+    cmp R1 R0
+    jlt loop
+    mov result R0
+    hlt
+

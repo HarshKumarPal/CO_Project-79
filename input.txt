@@ -1,0 +1,8 @@
+For assembler:
+
+var VAR1
+add R1 R2 R3
+movi R4 $20
+ld R1 VAR1
+jmp :LOOP
+hlt
